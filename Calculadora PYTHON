@@ -1,0 +1,36 @@
+
+try:
+
+    n1 = int(input('Digite um numero para calcular: '))
+    n2 = int(input('Digite outro numero para calcular: '))
+    a = input('Digite o sinal que voce quer usar (+, -, *, / ): ')
+
+    if a == '+':
+        resultado = n1 + n2
+
+
+    elif a == '-':
+        resultado = n1 - n2
+
+
+
+    elif a == '*':
+        resultado = n1 * n2
+
+
+
+    elif a == '/':
+        resultado = n1 / n2
+
+        
+
+    else:
+        print('Operação inválida')
+        resultado = None
+
+
+    if resultado is not None:
+        print(f'A conta {n1} {a} {n2} = {resultado}')
+
+except ValueError:
+    print('Digite um número inteiro')
